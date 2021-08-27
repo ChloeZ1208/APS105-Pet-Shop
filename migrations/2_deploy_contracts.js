@@ -1,5 +1,5 @@
-var Adoption = artifacts.require("Adoption");
+var Market = artifacts.require("Market");
 
 module.exports = function(deployer) {
-  deployer.deploy(Adoption);
+  deployer.deploy(Market);
 };

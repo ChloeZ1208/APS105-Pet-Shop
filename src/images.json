@@ -1,18 +1,18 @@
 [
   {
-    "name": "boxer",
+    "name": "Boxer",
     "img": "../images/boxer.jpeg"
   },
   {
-    "name": "french-bulldog",
+    "name": "French Bulldog",
     "img": "../images/french-bulldog.jpeg"
   },
   {
-    "name": "golden-retriever",
+    "name": "Golden Retriever",
     "img": "../images/golden-retriever.jpeg"
   },
   {
-    "name": "scottish-terrier",
+    "name": "Scottish Terrier",
     "img": "../images/scottish-terrier.jpeg"
   }
 ]

@@ -97,7 +97,7 @@ ElectionApp = {
         var voteCount = values[i][6];
 
         // Render candidate Result
-        var candidateTemplate = "<tr><th>" + i + "</th><td>" + petName + "</td><td>" + petBreed + "</td><td>" + petAge + "</td><td>" + petLoc + "</td><td><img src="+petImg+" alt=\"\" border=3 height=100 width=100></img></td><td>" + voteCount + "</td></tr>";
+        var candidateTemplate = "<tr><th>" + i + "</th><td>" + petName + "</td><td>" + petBreed + "</td><td>" + petAge + "</td><td>" + petLoc + "</td><td><img src="+petImg+" alt=\"\" class=\"img-rounded img-center\" border=3 height=100 width=100></img></td><td>" + voteCount + "</td></tr>";
         candidatesResults.append(candidateTemplate);
 
         // Render candidate ballot option
@@ -116,6 +116,8 @@ ElectionApp = {
       // user are only allowed to vote once
       if(hasVoted) {
         $('form#voteForm').hide();
+      } else {
+        $('form#voteForm').show();
       }
       return electionInstance.regList(ElectionApp.account);
     }).then(function() {

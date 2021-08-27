@@ -18,6 +18,4 @@ contract SendMeEther {
     function() external payable {
 	functionCalled = "fallback";
     }
-
-
 } 

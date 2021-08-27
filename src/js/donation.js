@@ -28,8 +28,8 @@ DonationApp = {
 
     initContract: function() {
       $.getJSON('SendMeEther.json', function(data) {
-        var AdoptionArtifact = data;
-        DonationApp.contracts.SendMeEther = TruffleContract(AdoptionArtifact);
+        var DonationArtifact = data;
+        DonationApp.contracts.SendMeEther = TruffleContract(DonationArtifact);
         DonationApp.contracts.SendMeEther.setProvider(DonationApp.web3Provider);
         // Use our contract to update contract information
         return DonationApp.render();

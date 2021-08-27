@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Pet's Adoption</title>
+    <title>Pet's Market</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,15 +24,13 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">Pet's Adoption</h1>
-        </div>
-      </div>
+      <header style="padding:16px 16px">
+        <h1 class="text-center text">Pet's Market</h1>
+        <p class="text-center">Choose and buy your favorite pet!</p>
       <div class="row" style="text-align: center;">
         <div class="btn-group">
-          <a class="btn btn-default align-items-center mb-4 mb-sm-0 me-2 px-8 py-3 btn-outline-light text-dark shadow" href="./adoption.html">
-            <span>Adoption</span>
+          <a class="btn btn-default align-items-center mb-4 mb-sm-0 me-2 px-8 py-3 btn-outline-light text-dark shadow" href="./market.html">
+            <span>Market</span>
           </a>
           <a class="btn btn-default align-items-center mb-4 mb-sm-0 me-2 px-8 py-3 btn-outline-light text-dark shadow" href="./donation.html">
             <span>Donation</span>
@@ -44,9 +42,15 @@
             <span>Registration</span>
           </a>
         </div>
-        <hr/>
+        <br/>
+      <div class="row">
+        <br/>
+          <p id="accountBalance" class="text-center"></p>
+          <p id="accountAddress" class="text-center"></p>
       </div>
-
+      <hr/>
+      </div>
+      </header>
       <div id="petsRow" class="row">
         <!-- PETS LOAD HERE -->
       </div>
@@ -63,8 +67,8 @@
             <br/><br/>
             <strong>Breed</strong>: <span class="pet-breed">Golden Retriever</span><br/>
             <strong>Age</strong>: <span class="pet-age">3</span><br/>
-            <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
-            <button class="btn btn-default btn-adopt" type="button" data-id="0">Adopt</button>
+            <!-- <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/> -->
+            <button class="btn btn-default btn-buy" type="button" data-id="0">Buy</button>
           </div>
         </div>
       </div>
@@ -76,6 +80,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/market.js"></script>
   </body>
 </html>
