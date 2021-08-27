@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "name": "Gina",
+    "picture": "images/scottish-terrier.jpeg",
+    "age": 3,
+    "breed": "Scottish Terrier",
+    "location": "Tooleville, West Virginia"
+  },
+  {
+    "id": 1,
+    "name": "Collins",
+    "picture": "images/french-bulldog.jpeg",
+    "age": 2,
+    "breed": "French Bulldog",
+    "location": "Freeburn, Idaho"
+  },
+  {
+    "id": 2,
+    "name": "Melissa",
+    "picture": "images/boxer.jpeg",
+    "age": 2,
+    "breed": "Boxer",
+    "location": "Camas, Pennsylvania"
+  },
+  {
+    "id": 3,
+    "name": "Latisha",
+    "picture": "images/golden-retriever.jpeg",
+    "age": 3,
+    "breed": "Golden Retriever",
+    "location": "Soudan, Louisiana"
+  },
+  {
+    "id": 4,
+    "name": "Nichole",
+    "picture": "images/french-bulldog.jpeg",
+    "age": 2,
+    "breed": "French Bulldog",
+    "location": "Honolulu, Hawaii"
+  },
+  {
+    "id": 5,
+    "name": "Fran",
+    "picture": "images/boxer.jpeg",
+    "age": 3,
+    "breed": "Boxer",
+    "location": "Matheny, Utah"
+  },
+  {
+    "id": 6,
+    "name": "Terry",
+    "picture": "images/golden-retriever.jpeg",
+    "age": 12,
+    "breed": "Golden Retriever",
+    "location": "Dawn, Wisconsin"
+  }
+]
