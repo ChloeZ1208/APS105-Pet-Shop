@@ -32,14 +32,10 @@ contract Election {
     );
 
     constructor () public {
-        // Default candidate from pets.json
         addCandidate("Gina", "Scottish Terrier", 3, "Tooleville, West Virginia", "images/scottish-terrier.jpeg");
         addCandidate("Collins", "French Bulldog", 2, "Freeburn, Idaho", "images/french-bulldog.jpeg");
         addCandidate("Melissa", "Boxer", 2, "Camas, Pennsylvania", "images/boxer.jpeg");
         addCandidate("Latisha", "Golden Retriever", 3, "Soudan, Louisiana", "images/golden-retriever.jpeg");
-        addCandidate("Nichole", "French Bulldog", 2, "Honolulu, Hawaii", "images/french-bulldog.jpeg");
-        addCandidate("Fran", "Boxer", 3, "Matheny, Utah", "images/boxer.jpeg");
-        addCandidate("Terry", "Golden Retriever", 12, "Dawn, Wisconsin", "images/golden-retriever.jpeg");
 
     }
 

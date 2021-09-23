@@ -57,7 +57,6 @@ DonationApp = {
         }
         var account = accounts[0];
         var newString = $('#newString').val();
-        console.log(newString)
 
         DonationApp.contracts.SendMeEther.deployed().then(function(instance) {
           return instance.receiveEther({from: account,value: window.web3.toWei(newString, 'ether')})

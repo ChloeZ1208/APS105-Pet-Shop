@@ -13,7 +13,7 @@ App = {
         petTemplate.find('img').attr('src', data[i].picture);
         petTemplate.find('.pet-breed').text(data[i].breed);
         petTemplate.find('.pet-age').text(data[i].age);
-        //petTemplate.find('.pet-location').text(data[i].location);
+        petTemplate.find('.pet-price').text(data[i].price);
         petTemplate.find('.btn-buy').attr('data-id', data[i].id);
 
         petsRow.append(petTemplate.html());
@@ -104,6 +104,8 @@ App = {
 
     var petId = parseInt($(event.target).data('id'));
 
+    var price = $('.panel-pet').eq(petId).find('.pet-price').text();
+
     var buyInstance;
 
     web3.eth.getAccounts(function(error, accounts) {
@@ -117,7 +119,7 @@ App = {
         buyInstance = instance;
     
         // Execute buy as a transaction by sending account
-        return buyInstance.buy(petId, {from: account, value: window.web3.toWei('20', 'ether')});
+        return buyInstance.buy(petId, {from: account, value: window.web3.toWei(price, 'ether')});
       }).then(function(result) {
         return App.markSoledout();
       }).catch(function(err) {
