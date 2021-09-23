@@ -1,6 +1,5 @@
-# APS1050 Pet Shop Truffle Summary
+# APS1050 Pet Shop Project Summary
 
-This box has all you need to get started with our [Pet Shop tutorial](http://truffleframework.com/tutorials/pet-shop).
 ## Features Description
 ### Pet’s Market
 Pet’s market provides users available pets with name, breed, age and prices tagged, allowing them to choose and buy their favorite pet. Once a pet is bought by a customer, a ‘sold out’ tag will be marked below the pet’s picture.
